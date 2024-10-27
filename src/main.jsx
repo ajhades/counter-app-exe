@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HelloWorldApp } from "./HelloWorldApp";
-import './style.css';
+// import { HelloWorldApp } from "./HelloWorldApp";
+import './styles.css';
+import { CounterApp } from "./CounterApp";
 
-
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot( document.getElementById('root')).render(
   <React.StrictMode>
-    <HelloWorldApp title="Hola, soy krilin" subtitle="Juro no volver a morir" />
+    <CounterApp value={12}/>
   </React.StrictMode>
 );
+
