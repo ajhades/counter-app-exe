@@ -21,7 +21,6 @@ describe("Pruebas en 09-promesas", () => {
         done();
       })
       .catch((error) => {
-        console.log(error);
         expect(error).toBe(`No se pudo encontrar el héroe ${id}`);
         done();
       });
